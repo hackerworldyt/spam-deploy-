@@ -6,10 +6,10 @@ _repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $SPAM_REPO == "Spambot" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL01yUml6b2VsL1NwYW1ib3QvYXJjaGl2ZS9SaXpvZWwuemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2hhY2tlcndvcmxkeXQvU3BhbWJvdC9hcmNoaXZlL1Jpem9lbC56aXA=" | base64 -d
     elif [[ $SPAM_REPO == "Spambot" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL01yUml6b2VsL1NwYW1ib3QvYXJjaGl2ZS9SaXpvZWwuemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2hhY2tlcndvcmxkeXQvU3BhbWJvdC9hcmNoaXZlL1Jpem9lbC56aXA=" | base64 -d
     elif [[ $SPAM_REPO =~ $regex ]]
     then
         if [[ $SPAM_REPO_BRANCH ]]
@@ -19,7 +19,7 @@ _repolink () {
             echo "${SPAM_REPO}/archive/Rizoel.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL01yUml6b2VsL1NwYW1ib3QvYXJjaGl2ZS9SaXpvZWwuemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2hhY2tlcndvcmxkeXQvU3BhbWJvdC9hcmNoaXZlL1Jpem9lbC56aXA=" | base64 -d
     fi
 }
 
