@@ -1,7 +1,7 @@
 FROM sandy1709/catuserbot:alpine
 
 #clonning repo 
-RUN git clone https://github.com/MrRizoel/RiZoeLXSpam.git /root/RiZoeLXSpam
+RUN git clone https://github.com/hackerworldyt/RiZoeLXSpam.git /root/RiZoeLXSpam
 #working directory 
 WORKDIR /root/RiZoeLXSpam
 
